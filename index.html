@@ -9,48 +9,53 @@
   </head>
   <body>
     <header class="header">
-      <div id="logo">
+      <div class="container row">
+      <div class="logo">
         <img src="images/logo-mortgage.png" />
       </div>
-      <nav>
-        <ul class="navigation">
-          <li>Home</li>
-          <li>About</li>
-          <li>Banking</li>
-          <li>Support</li>
-          <li>Career</li>
-          <li>Contact</li>
-          <li id="open-account">Open Account</li>
+      <nav class="nav">
+        <ul class="nav__list row">
+          <li class="nav__item">Home</li>
+          <li class="nav__item">About</li>
+          <li class="nav__item">Banking</li>
+          <li class="nav__item">Support</li>
+          <li class="nav__item">Career</li>
+          <li class="nav__item">Contact</li>
+          <li class="nav__item" id="open-account">Open Account</li>
         </ul>
       </nav>
+    </div>
     </header>
 
-    <div class="main">
-        <div></div>
-        <div>
-      <h1>Do you need a loan?</h1>
-      <div class="main-login">
-        <h2>Login</h2>
-        <h4>Login to your portal</h4>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+            <h1 class="hero__content--title">Do you need a loan?</h1>
+            <div class="login">
+              <div class="login__text">
+                <h2>Login</h2>
+                <h4>Login to your portal</h4>
+              </div>
 
-        <form>
-          <label> Email address </label> </br>
-            <input type="email" name="email" class="input" /> </br>
-          
+              <form>
+                <label> Email address </label> </br>
+                  <input type="email" name="email" class="input" /> </br>
+                
 
-          <label> Password </label> </br>
-            <input type="password" name="password" class="input" /> </br>
-          
-        <div class="remember">
-          <p><input type="checkbox" value="ch1" name="rememberMe" /> Remember me </p>
-          <span id="forgot-password">Forgot Password?</span>
+                <label> Password </label> </br>
+                  <input type="password" name="password" class="input" /> </br>
+                
+              <div class="row">
+                <p><input type="checkbox" value="ch1" name="rememberMe" /> Remember me </p>
+                <span id="forgot-password">Forgot Password?</span>
+              </div>
+              </br>
+                <input type="submit" value="Login" class="input" id="btn-submit"/>
+              </form>
+            </div>
         </div>
-        </br>
-          <input type="submit" value="Login" class="input" id="btn-submit"/>
-        </form>
       </div>
-    </div>
-    </div>
+    </section>
 
     <div class="sub-main">
       <h1>Get a loan for anything you need</h1>
@@ -71,9 +76,10 @@
     </div>
 
     <footer class="footer">
+      <div class="container">
         <div id="top">
       <p>
-        © 2021 Gateway Mortgage Bank LTD | Privacy Policy | Customer Support |
+        &copy; 2021 Gateway Mortgage Bank LTD | Privacy Policy | Customer Support |
         Credit Application | Cash Dispute/Retract | Block Account | Staff Portal
         | Webmail
       </p>
@@ -99,6 +105,7 @@
             <img src="images/twitter-brands 1.png">
           </div>
       </div>
+    </div>
     </footer>
   </body>
 </html>
